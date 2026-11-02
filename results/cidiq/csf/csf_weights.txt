@@ -1,0 +1,32 @@
+bands: [ 0.8  1.7  2.8  4.   8.  16. ]  n: 690 690  ppd: 31.612 63.223
+stride-16 pixels per image: 2500 2500
+
+[A] uniform 2/36             all data: 50cm 0.7009  100cm 0.6328  pooled 0.6589 (SRCC 0.6695, RMSE 1.1792)   |  held-out mean: 50cm 0.7581  100cm 0.6965  pooled 0.7165
+[G] fitted (all-data weights) all data: 50cm 0.8163  100cm 0.8085  pooled 0.8196 (SRCC 0.8216, RMSE 0.8981)   |  held-out mean: 50cm 0.8453  100cm 0.8315  pooled 0.8419
+[B] w∝S   L= 20 Xo=20    all data: 50cm 0.7361  100cm 0.7491  pooled 0.7516 (SRCC 0.7603, RMSE 1.0341)   |  held-out mean: 50cm 0.7892  100cm 0.7946  pooled 0.7982
+[B] w∝S^½ L= 20 Xo=20    all data: 50cm 0.7201  100cm 0.7050  pooled 0.7176 (SRCC 0.7273, RMSE 1.0917)   |  held-out mean: 50cm 0.7754  100cm 0.7587  pooled 0.7698
+[B] w∝S²  L= 20 Xo=20    all data: 50cm 0.7580  100cm 0.7805  pooled 0.7783 (SRCC 0.7863, RMSE 0.9842)   |  held-out mean: 50cm 0.8064  100cm 0.8166  pooled 0.8177
+[B] w∝S   L= 40 Xo=20    all data: 50cm 0.7295  100cm 0.7415  pooled 0.7443 (SRCC 0.7535, RMSE 1.0469)   |  held-out mean: 50cm 0.7837  100cm 0.7889  pooled 0.7925
+[B] w∝S^½ L= 40 Xo=20    all data: 50cm 0.7164  100cm 0.6993  pooled 0.7125 (SRCC 0.7225, RMSE 1.0999)   |  held-out mean: 50cm 0.7722  100cm 0.7541  pooled 0.7655
+[B] w∝S²  L= 40 Xo=20    all data: 50cm 0.7484  100cm 0.7751  pooled 0.7711 (SRCC 0.7796, RMSE 0.9980)   |  held-out mean: 50cm 0.7993  100cm 0.8142  pooled 0.8131
+[B] w∝S   L= 80 Xo=20    all data: 50cm 0.7236  100cm 0.7341  pooled 0.7375 (SRCC 0.7472, RMSE 1.0586)   |  held-out mean: 50cm 0.7787  100cm 0.7832  pooled 0.7871
+[B] w∝S^½ L= 80 Xo=20    all data: 50cm 0.7131  100cm 0.6939  pooled 0.7078 (SRCC 0.7181, RMSE 1.1073)   |  held-out mean: 50cm 0.7693  100cm 0.7498  pooled 0.7615
+[B] w∝S²  L= 80 Xo=20    all data: 50cm 0.7395  100cm 0.7691  pooled 0.7639 (SRCC 0.7732, RMSE 1.0115)   |  held-out mean: 50cm 0.7923  100cm 0.8107  pooled 0.8081
+[B'] w∝S, max(fi,fj) L=40  all data: 50cm 0.7180  100cm 0.7280  pooled 0.7316 (SRCC 0.7416, RMSE 1.0687)   |  held-out mean: 50cm 0.7741  100cm 0.7789  pooled 0.7825
+[E] w∝S per-field 24.9/12.6  all data: 50cm 0.7312  100cm 0.7374  pooled 0.7431
+    S(f) at 24.9 vs 12.6 deg: [1.184 1.089 1.021 0.982 0.941 0.958]
+
+square-root compression  exp(-sum w sqrt(-log xi)):
+[F1] uniform, sqrt            all data: 50cm 0.6212  100cm 0.5326  pooled 0.5495 (SRCC 0.5602, RMSE 1.3096)   |  held-out mean: 50cm 0.6884  100cm 0.6133  pooled 0.6167
+[F2] w∝S L=40, sqrt           all data: 50cm 0.6505  100cm 0.6520  pooled 0.6593 (SRCC 0.6702, RMSE 1.1786)   |  held-out mean: 50cm 0.7142  100cm 0.7171  pooled 0.7206
+[F3] w∝S^½ L=40, sqrt         all data: 50cm 0.6367  100cm 0.6048  pooled 0.6198 (SRCC 0.6307, RMSE 1.2301)   |  held-out mean: 50cm 0.7022  100cm 0.6760  pooled 0.6844
+[F4] fitted weights, sqrt     all data: 50cm 0.7673  100cm 0.7717  pooled 0.7792 (SRCC 0.7841, RMSE 0.9826)   |  held-out mean: 50cm 0.8103  100cm 0.8024  pooled 0.8128
+
+CSF weights (w∝S, L=40, Xo=20), rows i = horizontal band, cols j = vertical band:
+[[0.0773 0.0937 0.0944 0.0852 0.0517 0.0192]
+ [0.0937 0.096  0.0921 0.0827 0.0508 0.0191]
+ [0.0944 0.0921 0.0863 0.0776 0.0489 0.0187]
+ [0.0852 0.0827 0.0776 0.0704 0.0461 0.0181]
+ [0.0517 0.0508 0.0489 0.0461 0.0342 0.0153]
+ [0.0192 0.0191 0.0187 0.0181 0.0153 0.0084]]
+S(f) at band peaks, L=40, Xo=20: [435.2 644.5 668.3 604.9 365.8 135.6]

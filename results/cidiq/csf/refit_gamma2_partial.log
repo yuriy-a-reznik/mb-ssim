@@ -1,0 +1,3 @@
+  gamma 2.00 fold 0: train obj 0.7965  held-out 50cm 0.8170 100cm 0.8176 pooled 0.8235  (3890 evals, 585s)
+  gamma 2.00 fold 1: train obj 0.8197  held-out 50cm 0.7142 100cm 0.7784 pooled 0.7495  (3804 evals, 1400s)
+  gamma 2.00 fold 2: train obj 0.7807  held-out 50cm 0.8584 100cm 0.8404 pooled 0.8541  (3788 evals, 1996s)

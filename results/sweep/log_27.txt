@@ -1,0 +1,10 @@
+dataset : TID2013  (3000 pairs, 25 reference groups)
+score   : mos (higher is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 27
+bands   : 6  [0.8L 1.7 2.8 4 8 11.31H] cpd
+
+evaluated 750 pairs
+
+(shard 0/4 -- run with --report to combine)
+  NB-SSIM     PLCC  0.8004   SRCC  0.7758   KRCC  0.5886   RMSE   0.7182   MAE   0.5651

@@ -1,0 +1,7 @@
+# nbssim exponents, 6 bands, asymmetric, full matrix (row i = horizontal channel, column j = vertical)
+0.6374906346 0 0 0 0.1307627938 0
+0 0 0 0 0 0
+0 0 0 0.5030816638 0 1.274563928e-05
+0 0 0.0004941278209 0.1035052376 0 0
+0.02241280323 0 0 0 0 0
+0 0.02882196939 0 0 0 0.02175876844

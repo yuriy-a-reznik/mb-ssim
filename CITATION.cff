@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "mb-ssim: a reference implementation of MB-SSIM, SSIM and MS-SSIM"
+type: software
+authors:
+  - family-names: Reznik
+    given-names: Yuriy
+license: MIT
+repository-code: "https://github.com/yuriy-a-reznik/mb-ssim"
+version: 1.4.0
+date-released: 2026-11-02
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: Reznik
+      given-names: Yuriy
+  title: "MB-SSIM: A Multi-Band Variant of SSIM, Tunable to Viewing Conditions"
+  collection-title: "Proc. IS&T International Symposium on Electronic Imaging: Image Quality and System Performance"
+  year: 2027

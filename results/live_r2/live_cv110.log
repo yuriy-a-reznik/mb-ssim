@@ -1,0 +1,44 @@
+conditions:
+  ppd110         ppd      110   6 bands   36 exponents    390 pairs   stride 12
+master bank : 6 bands, 36 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8 16] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    ppd110         n= 390   PLCC  0.9464   SRCC  0.9518   KRCC  0.8086   RMSE  8.6391
+    pooled         n= 390   PLCC  0.9464   SRCC  0.9518   KRCC  0.8086   RMSE  8.6391
+
+3-fold cross-validation, folds split by reference image,
+one shared exponent vector fitted per fold:
+  fold 0:
+    ppd110         n= 132   PLCC  0.9524   SRCC  0.9483   KRCC  0.8045   RMSE  8.0527
+    pooled         n= 132   PLCC  0.9524   SRCC  0.9483   KRCC  0.8045   RMSE  8.0527
+  fold 1:
+    ppd110         n= 138   PLCC  0.9645   SRCC  0.9611   KRCC  0.8408   RMSE  7.2939
+    pooled         n= 138   PLCC  0.9645   SRCC  0.9611   KRCC  0.8408   RMSE  7.2939
+  fold 2:
+    ppd110         n= 120   PLCC  0.9665   SRCC  0.9681   KRCC  0.8522   RMSE  6.6642
+    pooled         n= 120   PLCC  0.9665   SRCC  0.9681   KRCC  0.8522   RMSE  6.6642
+  mean held-out:
+    ppd110                  PLCC  0.9611   SRCC  0.9592   KRCC  0.8325   RMSE  7.3369
+    pooled                  PLCC  0.9611   SRCC  0.9592   KRCC  0.8325   RMSE  7.3369
+
+final shared fit on all data:
+  all data (shared fit)
+    ppd110         n= 390   PLCC  0.9638   SRCC  0.9647   KRCC  0.8372   RMSE  7.1347
+    pooled         n= 390   PLCC  0.9638   SRCC  0.9647   KRCC  0.8372   RMSE  7.1347
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    9.39217  0.00000  0.02658 12.19813  0.00000  0.00441
+    0.00000  0.00000  0.00000  0.00000  0.06897  2.92815
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    1.14388  0.00000  0.00000  0.00000  0.00000  0.00000
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 1.999
+mean exponent on the oblique diagonal (i==j): 1.56536 over 6
+mean exponent off  the diagonal  (i!=j)     : 0.54567 over 30

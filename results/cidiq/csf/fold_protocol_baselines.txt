@@ -1,0 +1,4 @@
+groups: 23 n: 690 690
+ssim    all data: 50cm 0.7670 100cm 0.8230 pooled 0.7765 | fold-mean: 50cm 0.7783 100cm 0.8328 pooled 0.7867
+msssim  all data: 50cm 0.8172 100cm 0.8034 pooled 0.7927 | fold-mean: 50cm 0.8331 100cm 0.8201 pooled 0.8081
+nbssim  all data: 50cm 0.8149 100cm 0.8074 pooled 0.8184 | fold-mean: 50cm 0.8441 100cm 0.8304 pooled 0.8408

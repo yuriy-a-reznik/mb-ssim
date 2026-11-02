@@ -1,0 +1,30 @@
+conditions:
+  LIVE           ppd       80   6 bands   36 exponents    779 pairs   stride 12
+master bank : 6 bands, 36 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8 16] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    LIVE           n= 779   PLCC  0.9349   SRCC  0.9412   KRCC  0.7844   RMSE  9.7003
+    pooled         n= 779   PLCC  0.9349   SRCC  0.9412   KRCC  0.7844   RMSE  9.7003
+
+5-fold cross-validation, folds split by reference image,
+one shared exponent vector fitted per fold:
+  fold 0:
+    LIVE           n= 160   PLCC  0.9619   SRCC  0.9645   KRCC  0.8396   RMSE  7.5138
+    pooled         n= 160   PLCC  0.9619   SRCC  0.9645   KRCC  0.8396   RMSE  7.5138
+  fold 1:
+    LIVE           n= 160   PLCC  0.9587   SRCC  0.9583   KRCC  0.8191   RMSE  7.9379
+    pooled         n= 160   PLCC  0.9587   SRCC  0.9583   KRCC  0.8191   RMSE  7.9379
+  fold 2:
+    LIVE           n= 162   PLCC  0.9549   SRCC  0.9578   KRCC  0.8201   RMSE  7.6430
+    pooled         n= 162   PLCC  0.9549   SRCC  0.9578   KRCC  0.8201   RMSE  7.6430
+  fold 3:
+    LIVE           n= 160   PLCC  0.9576   SRCC  0.9541   KRCC  0.8329   RMSE  8.0733
+    pooled         n= 160   PLCC  0.9576   SRCC  0.9541   KRCC  0.8329   RMSE  8.0733
+  fold 4:
+    LIVE           n= 137   PLCC  0.9488   SRCC  0.9434   KRCC  0.8134   RMSE  8.6336
+    pooled         n= 137   PLCC  0.9488   SRCC  0.9434   KRCC  0.8134   RMSE  8.6336

@@ -1,0 +1,13 @@
+resuming: 337 pairs already present in results/live_r2/s0.csv
+dataset : LIVE-R2  (779 pairs, 29 reference groups)
+score   : dmos (lower is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 30
+bands   : 6  [0.8L 1.7 2.8 4 8 11.31H] cpd
+
+evaluated 53 pairs
+
+summary over the complete file (390 pairs, 53 new):
+  SSIM        PLCC  0.9100   SRCC  0.8996   KRCC  0.7239   RMSE   6.7007   MAE   5.0183
+  MS-SSIM     PLCC  0.9141   SRCC  0.9039   KRCC  0.7297   RMSE   6.5542   MAE   4.9452
+  NB-SSIM     PLCC  0.8614   SRCC  0.8498   KRCC  0.6555   RMSE   8.2087   MAE   6.3712

@@ -1,0 +1,13 @@
+  gamma 0.50 fold 0: train obj 0.7784  held-out 50cm 0.8326 100cm 0.8015 pooled 0.8243  (6000 evals, 255s)
+  gamma 0.50 fold 1: train obj 0.8073  held-out 50cm 0.7273 100cm 0.7659 pooled 0.7523  (6000 evals, 523s)
+  gamma 0.50 fold 2: train obj 0.7637  held-out 50cm 0.8636 100cm 0.8161 pooled 0.8447  (5473 evals, 805s)
+  gamma 0.50 fold 3: train obj 0.7850  held-out 50cm 0.7636 100cm 0.7380 pooled 0.7535  (6000 evals, 1054s)
+  gamma 0.50 fold 4: train obj 0.7739  held-out 50cm 0.8204 100cm 0.7879 pooled 0.8098  (6000 evals, 1316s)
+gamma 0.50  mean held-out: 50cm 0.8015  100cm 0.7819  pooled 0.7969
+mean fold weights:
+ [[1.653 0.001 0.001 0.024 0.237 0.014]
+ [0.001 0.001 0.001 0.114 0.082 0.007]
+ [0.001 0.001 0.001 0.092 0.004 0.001]
+ [0.001 0.001 0.    0.119 0.001 0.001]
+ [0.093 0.001 0.001 0.001 0.    0.001]
+ [0.117 0.031 0.006 0.    0.005 0.003]]

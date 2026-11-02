@@ -1,0 +1,18 @@
+scored level 0.100
+scored level 0.200
+scored level 0.333
+scored level 0.500
+scored level 1.000
+scored level 3.000
+fold 0: chosen (K scale, beta) = (0.333, 1.2)  held-out 50cm 0.8901 100cm 0.8651 pooled 0.8825
+fold 1: chosen (K scale, beta) = (0.333, 0.95)  held-out 50cm 0.7799 100cm 0.8336 pooled 0.8120
+fold 2: chosen (K scale, beta) = (0.333, 1.1)  held-out 50cm 0.8941 100cm 0.8833 pooled 0.8936
+fold 3: chosen (K scale, beta) = (0.333, 1.2)  held-out 50cm 0.8079 100cm 0.7744 pooled 0.7944
+fold 4: chosen (K scale, beta) = (0.333, 1.2)  held-out 50cm 0.9182 100cm 0.8827 pooled 0.8987
+K and beta chosen on training folds: mean held-out 50cm 0.8580  100cm 0.8478  pooled 0.8563
+K scale 0.100, beta chosen per fold: 50cm 0.8021  100cm 0.8113  pooled 0.8108
+K scale 0.200, beta chosen per fold: 50cm 0.8449  100cm 0.8423  pooled 0.8465
+K scale 0.333, beta chosen per fold: 50cm 0.8580  100cm 0.8478  pooled 0.8563
+K scale 0.500, beta chosen per fold: 50cm 0.8545  100cm 0.8408  pooled 0.8515
+K scale 1.000, beta chosen per fold: 50cm 0.8219  100cm 0.8092  pooled 0.8205
+K scale 3.000, beta chosen per fold: 50cm 0.7577  100cm 0.7553  pooled 0.7621

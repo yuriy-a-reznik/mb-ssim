@@ -1,0 +1,6 @@
+dataset : TID2013  (3000 pairs, 25 reference groups)
+score   : mos (higher is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 60
+bands   : 6  [0.8L 1.7 2.8 4 8 11.31H] cpd
+
