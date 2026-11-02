@@ -1,4 +1,4 @@
-# mb-ssim — MB-SSIM: a multi-band variant of SSIM, tunable to viewing conditions
+# MB-SSIM: a multi-band variant of SSIM, tunable to viewing conditions
 
 [![licence: MIT](https://img.shields.io/badge/licence-MIT-blue.svg)](LICENSE)
 
