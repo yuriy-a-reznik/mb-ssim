@@ -1,0 +1,9 @@
+dataset : LIVE-R2  (779 pairs, 29 reference groups)
+score   : dmos (lower is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 110
+bands   : 6  [0.8 1.7 2.8 4 8 16] cpd
+
+evaluated 779 pairs
+
+  NB-SSIM     PLCC  0.9209   SRCC  0.9310   KRCC  0.7842   RMSE  10.6492   MAE   8.0248

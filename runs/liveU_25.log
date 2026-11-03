@@ -1,0 +1,11 @@
+resuming: 475 pairs already present in runs/liveU_25.csv
+dataset : LIVE-R2  (779 pairs, 29 reference groups)
+score   : dmos (lower is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 25
+bands   : 5  [0.8 1.7 2.8 4 8] cpd
+
+evaluated 304 pairs
+
+summary over the complete file (779 pairs, 304 new):
+  NB-SSIM     PLCC  0.9384   SRCC  0.9420   KRCC  0.7860   RMSE   9.4378   MAE   7.3874
