@@ -1,0 +1,5 @@
+dataset : CID:IQ-50cm  (690 pairs, 23 groups)
+ppd     : 31.612   bands: 6   free exponents: 36 (all free)
+bands   : [0.635 1.349 2.222 3.175 6.35 12.7] cpd
+caching log-xi with stride 16 ...
+cached 5 (1.7 MB)cached 10 (3.4 MB)cached 15 (5.1 MB)
