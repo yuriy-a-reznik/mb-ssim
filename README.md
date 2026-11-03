@@ -8,10 +8,11 @@ two-band decomposition with a psychophysically placed filterbank specified in
 **cycles per degree** — so the viewing geometry is an input to the metric
 rather than a correction applied afterwards.
 
+Based on:
+
 > Y. Reznik, *"MB-SSIM: A Multi-Band Variant of SSIM, Tunable to
 > Viewing Conditions"*, IS&T Electronic Imaging 2027, Image Quality and
-> System Performance. **(this repository:
-> <https://github.com/yuriy-a-reznik/mb-ssim>)**
+> System Performance. -- submitted
 
 The tools call the metric `nbssim` (N-band SSIM) throughout, which is what
 it was called while the design was being worked out; `MB-SSIM` is the name
