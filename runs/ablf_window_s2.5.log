@@ -1,0 +1,61 @@
+conditions:
+  50cm           ppd    31.61   5 bands   25 exponents    690 pairs   stride 16
+  100cm          ppd    63.22   6 bands   36 exponents    690 pairs   stride 16
+master bank : 6 bands, 36 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8 16] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    50cm           n= 690   PLCC  0.7010   SRCC  0.7011   KRCC  0.5238   RMSE  1.0948
+    100cm          n= 690   PLCC  0.6341   SRCC  0.6556   KRCC  0.4712   RMSE  1.1914
+    pooled         n=1380   PLCC  0.6593   SRCC  0.6696   KRCC  0.4883   RMSE  1.1787
+
+5-fold cross-validation, folds split by reference image,
+one shared exponent vector fitted per fold:
+  fold 0:
+    50cm           n= 150   PLCC  0.8458   SRCC  0.8414   KRCC  0.6505   RMSE  0.7831
+    100cm          n= 150   PLCC  0.8275   SRCC  0.8139   KRCC  0.6223   RMSE  0.8244
+    pooled         n= 300   PLCC  0.8445   SRCC  0.8421   KRCC  0.6503   RMSE  0.8052
+  fold 1:
+    50cm           n= 150   PLCC  0.7594   SRCC  0.7550   KRCC  0.5584   RMSE  1.0660
+    100cm          n= 150   PLCC  0.8151   SRCC  0.8169   KRCC  0.6240   RMSE  0.9745
+    pooled         n= 300   PLCC  0.7929   SRCC  0.7990   KRCC  0.6008   RMSE  1.0277
+  fold 2:
+    50cm           n= 150   PLCC  0.8915   SRCC  0.8944   KRCC  0.7135   RMSE  0.6849
+    100cm          n= 150   PLCC  0.8442   SRCC  0.8177   KRCC  0.6294   RMSE  0.7715
+    pooled         n= 300   PLCC  0.8745   SRCC  0.8666   KRCC  0.6781   RMSE  0.7335
+  fold 3:
+    50cm           n= 120   PLCC  0.8202   SRCC  0.8125   KRCC  0.6401   RMSE  0.8894
+    100cm          n= 120   PLCC  0.7868   SRCC  0.7619   KRCC  0.5958   RMSE  0.9541
+    pooled         n= 240   PLCC  0.7986   SRCC  0.7913   KRCC  0.6155   RMSE  0.9465
+  fold 4:
+    50cm           n= 120   PLCC  0.8632   SRCC  0.8622   KRCC  0.6752   RMSE  0.7434
+    100cm          n= 120   PLCC  0.8346   SRCC  0.8290   KRCC  0.6287   RMSE  0.8429
+    pooled         n= 240   PLCC  0.8531   SRCC  0.8515   KRCC  0.6542   RMSE  0.7981
+  mean held-out:
+    50cm                    PLCC  0.8360   SRCC  0.8331   KRCC  0.6476   RMSE  0.8334
+    100cm                   PLCC  0.8216   SRCC  0.8079   KRCC  0.6200   RMSE  0.8735
+    pooled                  PLCC  0.8327   SRCC  0.8301   KRCC  0.6398   RMSE  0.8622
+
+final shared fit on all data:
+  all data (shared fit)
+    50cm           n= 690   PLCC  0.8182   SRCC  0.8199   KRCC  0.6296   RMSE  0.8827
+    100cm          n= 690   PLCC  0.8096   SRCC  0.8022   KRCC  0.6077   RMSE  0.9043
+    pooled         n=1380   PLCC  0.8211   SRCC  0.8229   KRCC  0.6284   RMSE  0.8948
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    1.08269  0.00000  0.00008  0.00002  0.17798  0.00000
+    0.00000  0.00000  0.00000  0.11689  0.00000  0.00000
+    0.00000  0.05403  0.06709  0.38911  0.00229  0.00000
+    0.00015  0.00000  0.20169  0.30672  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.02250  0.02629  0.00000  0.00000  0.00000  0.02735
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 1.186
+mean exponent on the oblique diagonal (i==j): 0.24731 over 6
+mean exponent off  the diagonal  (i!=j)     : 0.03303 over 30
+
+written to runs/ablf_w_window_s2.5.txt

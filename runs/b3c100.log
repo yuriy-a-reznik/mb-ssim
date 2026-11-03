@@ -1,0 +1,19 @@
+dataset : CID:IQ-100cm  (690 pairs, 23 groups)
+ppd     : 63.223   bands: 3   free exponents: 9 (all free)
+bands   : [1.166 3.347 11.31] cpd
+caching log-xi with stride 16 ...
+cached 690 pairs, 59.2 MB
+cache written to runs/b3_100cm.bin
+
+baseline (starting exponents):
+  all data           n= 690   PLCC  0.6424   SRCC  0.6660   KRCC  0.4787   RMSE   1.1807
+
+final fit on all data:
+  all data (fitted)  n= 690   PLCC  0.6923   SRCC  0.7121   KRCC  0.5198   RMSE   1.1118
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.25852  0.25852  0.25852
+    0.25852  0.25852  0.25852
+    0.25852  0.25852  0.00444
+
+written to /dev/null

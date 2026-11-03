@@ -1,0 +1,16 @@
+conditions:
+  50cm           ppd    31.61   5 bands   25 exponents    690 pairs   stride 16
+  100cm          ppd    63.22   6 bands   36 exponents    690 pairs   stride 16
+master bank : 6 bands, 36 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8 16] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    50cm           n= 690   PLCC  0.6967   SRCC  0.6965   KRCC  0.5250   RMSE  1.1013
+    100cm          n= 690   PLCC  0.6490   SRCC  0.6781   KRCC  0.4930   RMSE  1.1722
+    pooled         n=1380   PLCC  0.6649   SRCC  0.6782   KRCC  0.4987   RMSE  1.1709
+
+Terminated

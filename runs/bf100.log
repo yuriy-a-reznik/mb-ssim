@@ -1,0 +1,9 @@
+dataset : CID:IQ-100cm  (690 pairs, 23 reference groups)
+score   : mos (higher is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 63.223
+bands   : 6  [0.8 1.7 2.8 4 8 16] cpd
+
+evaluated 690 pairs
+
+  NB-SSIM     PLCC  0.8074   SRCC  0.8002   KRCC  0.6050   RMSE   0.9091   MAE   0.7138

@@ -1,0 +1,21 @@
+dataset : CID:IQ-50cm  (690 pairs, 23 groups)
+ppd     : 31.612   bands: 5   free exponents: 15
+bands   : [0.8 1.7 2.8 4 8] cpd
+caching log-xi with stride 16 ...
+cached 690 pairs, 98.7 MB
+cache written to runs/cache_50cm_nodec.bin
+
+baseline (starting exponents):
+  all data           n= 690   PLCC  0.6964   SRCC  0.6974   KRCC  0.5223   RMSE   1.1017
+
+final fit on all data:
+  all data (fitted)  n= 690   PLCC  0.7107   SRCC  0.7110   KRCC  0.5336   RMSE   1.0799
+
+fitted exponents (upper triangle, w_ij == w_ji):
+    0.13200  0.08000  0.08000  0.08000  0.08000
+             0.08000  0.08000  0.08000  0.08000
+                      0.08000  0.08000  0.08000
+                               0.08000  0.08000
+                                        0.08000
+
+written to /tmp/wnd2.txt

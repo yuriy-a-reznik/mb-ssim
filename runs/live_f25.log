@@ -1,0 +1,30 @@
+conditions:
+  ppd25          ppd       25   5 bands   25 exponents    390 pairs   stride 12
+master bank : 5 bands, 25 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 4
+
+baseline (uniform exponents):
+  all data
+    ppd25          n= 390   PLCC  0.8922   SRCC  0.8959   KRCC  0.7120   RMSE 12.0836
+    pooled         n= 390   PLCC  0.8922   SRCC  0.8959   KRCC  0.7120   RMSE 12.0836
+
+final shared fit on all data:
+  all data (shared fit)
+    ppd25          n= 390   PLCC  0.9441   SRCC  0.9475   KRCC  0.7989   RMSE  8.8163
+    pooled         n= 390   PLCC  0.9441   SRCC  0.9475   KRCC  0.7989   RMSE  8.8163
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.03648  0.77289  0.00000  0.13249  0.14457
+    0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00844  0.00000  0.00000  0.00000
+    0.03814  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 1.861
+mean exponent on the oblique diagonal (i==j): 0.00730 over 5
+mean exponent off  the diagonal  (i!=j)     : 0.05483 over 20
+
+written to runs/live_w25.txt

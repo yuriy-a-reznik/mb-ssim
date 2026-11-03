@@ -1,0 +1,43 @@
+conditions:
+  ppd30          ppd       30   5 bands   25 exponents    390 pairs   stride 12
+master bank : 5 bands, 25 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    ppd30          n= 390   PLCC  0.9167   SRCC  0.9182   KRCC  0.7464   RMSE 10.6897
+    pooled         n= 390   PLCC  0.9167   SRCC  0.9182   KRCC  0.7464   RMSE 10.6897
+
+3-fold cross-validation, folds split by reference image,
+one shared exponent vector fitted per fold:
+  fold 0:
+    ppd30          n= 132   PLCC  0.9433   SRCC  0.9357   KRCC  0.7830   RMSE  8.7699
+    pooled         n= 132   PLCC  0.9433   SRCC  0.9357   KRCC  0.7830   RMSE  8.7699
+  fold 1:
+    ppd30          n= 138   PLCC  0.9607   SRCC  0.9611   KRCC  0.8401   RMSE  7.6698
+    pooled         n= 138   PLCC  0.9607   SRCC  0.9611   KRCC  0.8401   RMSE  7.6698
+  fold 2:
+    ppd30          n= 120   PLCC  0.9626   SRCC  0.9618   KRCC  0.8407   RMSE  7.0330
+    pooled         n= 120   PLCC  0.9626   SRCC  0.9618   KRCC  0.8407   RMSE  7.0330
+  mean held-out:
+    ppd30                   PLCC  0.9555   SRCC  0.9528   KRCC  0.8213   RMSE  7.8242
+    pooled                  PLCC  0.9555   SRCC  0.9528   KRCC  0.8213   RMSE  7.8242
+
+final shared fit on all data:
+  all data (shared fit)
+    ppd30          n= 390   PLCC  0.9567   SRCC  0.9585   KRCC  0.8239   RMSE  7.7839
+    pooled         n= 390   PLCC  0.9567   SRCC  0.9585   KRCC  0.8239   RMSE  7.7839
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.73710  1.12377  0.01447  0.75558  0.26061
+    0.00000  0.00000  0.00000  0.00000  0.03124
+    0.00000  0.00000  0.00000  0.00000  0.00000
+    0.13857  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 1.762
+mean exponent on the oblique diagonal (i==j): 0.14742 over 5
+mean exponent off  the diagonal  (i!=j)     : 0.11621 over 20

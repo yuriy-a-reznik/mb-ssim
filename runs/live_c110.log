@@ -1,0 +1,22 @@
+dataset : LIVE-R2  (779 pairs, 29 groups)
+ppd     : 110   bands: 6   free exponents: 36 (all free)
+bands   : [0.8 1.7 2.8 4 8 16] cpd
+caching log-xi with stride 12 ...
+cached 390 pairs, 133.7 MB
+cache written to runs/live_p110.bin
+
+baseline (starting exponents):
+  all data           n= 390   PLCC  0.9464   SRCC  0.9518   KRCC  0.8086   RMSE   8.6391
+
+final fit on all data:
+  all data (fitted)  n= 390   PLCC  0.9468   SRCC  0.9522   KRCC  0.8096   RMSE   8.6084
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.09778  0.05556  0.05556  0.05556  0.05556  0.05556
+    0.05556  0.05556  0.05556  0.05556  0.05556  0.05556
+    0.05556  0.05556  0.05556  0.05556  0.05556  0.05556
+    0.05556  0.05556  0.05556  0.05556  0.05556  0.05556
+    0.05556  0.05556  0.05556  0.05556  0.05556  0.05556
+    0.05556  0.05556  0.05556  0.05556  0.05556  0.05556
+
+written to /dev/null

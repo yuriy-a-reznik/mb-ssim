@@ -1,0 +1,13 @@
+resuming: 512 pairs already present in runs/cidiq_50cm.csv
+dataset : CID:IQ-50cm  (690 pairs, 23 reference groups)
+score   : mos (higher is better)
+note    : SRCC/KRCC signs are flipped so that positive means agreement
+ppd     : 31.612
+bands   : 5  [0.8 1.7 2.8 4 8] cpd
+
+evaluated 178 pairs
+
+summary over the complete file (690 pairs, 178 new):
+  SSIM        PLCC  0.7670   SRCC  0.7691   KRCC  0.5783   RMSE   0.9850   MAE   0.7576
+  MS-SSIM     PLCC  0.8172   SRCC  0.8188   KRCC  0.6287   RMSE   0.8847   MAE   0.6734
+  NB-SSIM     PLCC  0.6954   SRCC  0.6953   KRCC  0.5187   RMSE   1.1033   MAE   0.8440

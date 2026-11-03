@@ -1,0 +1,42 @@
+conditions:
+  ppd15          ppd       15   4 bands   16 exponents    390 pairs   stride 12
+master bank : 4 bands, 16 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 8
+
+baseline (uniform exponents):
+  all data
+    ppd15          n= 390   PLCC  0.8826   SRCC  0.8847   KRCC  0.6989   RMSE 12.5741
+    pooled         n= 390   PLCC  0.8826   SRCC  0.8847   KRCC  0.6989   RMSE 12.5741
+
+3-fold cross-validation, folds split by reference image,
+one shared exponent vector fitted per fold:
+  fold 0:
+    ppd15          n= 132   PLCC  0.9452   SRCC  0.9453   KRCC  0.7908   RMSE  8.6274
+    pooled         n= 132   PLCC  0.9452   SRCC  0.9453   KRCC  0.7908   RMSE  8.6274
+  fold 1:
+    ppd15          n= 138   PLCC  0.9571   SRCC  0.9559   KRCC  0.8209   RMSE  8.0018
+    pooled         n= 138   PLCC  0.9571   SRCC  0.9559   KRCC  0.8209   RMSE  8.0018
+  fold 2:
+    ppd15          n= 120   PLCC  0.9577   SRCC  0.9535   KRCC  0.8231   RMSE  7.4708
+    pooled         n= 120   PLCC  0.9577   SRCC  0.9535   KRCC  0.8231   RMSE  7.4708
+  mean held-out:
+    ppd15                   PLCC  0.9533   SRCC  0.9516   KRCC  0.8116   RMSE  8.0334
+    pooled                  PLCC  0.9533   SRCC  0.9516   KRCC  0.8116   RMSE  8.0334
+
+final shared fit on all data:
+  all data (shared fit)
+    ppd15          n= 390   PLCC  0.9536   SRCC  0.9564   KRCC  0.8146   RMSE  8.0518
+    pooled         n= 390   PLCC  0.9536   SRCC  0.9564   KRCC  0.8146   RMSE  8.0518
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.06751  0.00000  0.00000  0.04400
+    0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 2.000
+mean exponent on the oblique diagonal (i==j): 0.01688 over 4
+mean exponent off  the diagonal  (i!=j)     : 0.00367 over 12

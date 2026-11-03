@@ -1,0 +1,31 @@
+conditions:
+  ppd40          ppd       40   6 bands   36 exponents    390 pairs   stride 12
+master bank : 6 bands, 36 shared exponents (all free)
+bands       : [0.8 1.7 2.8 4 8 16] cpd
+objective   : mean of per-condition PLCC
+
+search tensor subsampled by 4
+
+baseline (uniform exponents):
+  all data
+    ppd40          n= 390   PLCC  0.9012   SRCC  0.9045   KRCC  0.7243   RMSE 11.5952
+    pooled         n= 390   PLCC  0.9012   SRCC  0.9045   KRCC  0.7243   RMSE 11.5952
+
+final shared fit on all data:
+  all data (shared fit)
+    ppd40          n= 390   PLCC  0.9497   SRCC  0.9524   KRCC  0.8113   RMSE  8.3799
+    pooled         n= 390   PLCC  0.9497   SRCC  0.9524   KRCC  0.8113   RMSE  8.3799
+
+fitted exponents (row i = horizontal channel, column j = vertical):
+    0.21419  0.75796  1.00528  0.00000  0.48906  0.11236
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.09778  0.00000  0.00000  0.00000  0.00000  0.00000
+    0.00000  0.00000  0.00000  0.00000  0.00000  0.00000
+
+off-diagonal asymmetry: mean |w_ij - w_ji| / mean |w| = 1.841
+mean exponent on the oblique diagonal (i==j): 0.03570 over 6
+mean exponent off  the diagonal  (i!=j)     : 0.08208 over 30
+
+written to runs/live_w40.txt
